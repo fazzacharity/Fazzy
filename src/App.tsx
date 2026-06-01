@@ -430,31 +430,31 @@ export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroSlides = [
     {
-      img: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
+      img: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format,compress&q=90&w=2000",
       tag: "EMPOWERING FUTURE FUTURES",
       title: "Educating and Sponsoring Children Worldwide",
       sub: "Constructing modern learn spaces and equipping remote communities with high-tech science materials."
     },
     {
-      img: "https://images.unsplash.com/photo-1584515906207-fd664b1c585a?w=800&q=80",
+      img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format,compress&q=90&w=2000",
       tag: "HUNGER SHIELD GLOBAL",
       title: "Sustaining Life and Local Rural Agriculture",
       sub: "Reaching deep famine territories with tailored vital nutrients and dry rations."
     },
     {
-      img: "https://images.unsplash.com/photo-1494883759339-0b042055a4ee?w=800&q=80",
+      img: "https://images.unsplash.com/photo-1494883759339-0b042055a4ee?auto=format,compress&q=90&w=2000",
       tag: "MOBILE HEALTH CARAVANS",
       title: "State-of-the-Art Free Ophthalmic Surgery Clinics",
       sub: "Restoring vision to over 90,000 citizens directly in rural mountain communities."
     },
     {
-      img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1400",
+      img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format,compress&q=90&w=2000",
       tag: "RAPID RECOVERY CRISIS CORE",
       title: "Immediate Humanitarian Emergency Triage",
       sub: "Establishing water purifying centers and high-capacity shelters inside 24 hours of crises."
     },
     {
-      img: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1400",
+      img: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format,compress&q=90&w=2000",
       tag: "COVENANT WOMEN MICRO-FUND",
       title: "Microcapital Grants & Leadership Workshops",
       sub: "Sponsoring local women cooperatives to manage independent textile enterprises."
