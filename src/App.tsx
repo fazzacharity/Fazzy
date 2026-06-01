@@ -5,6 +5,14 @@ import { Navbar } from "./components/Navbar";
 import { ServicePages } from "./components/ServicePages";
 import { PremiumDonateButton } from "./components/PremiumDonateButton";
 import { translate, translateParagraph, TOP_LANGUAGES } from "./translation";
+import childrenPlayingImg from "./assets/images/children_playing_field_1780309954729.png";
+import happyChildrenPlaying from "./assets/images/happy_children_playing_1780312084115.png";
+import taipeiCareImg from "./assets/images/taipei_care_1780312347527.png";
+import kaohsiungCareImg from "./assets/images/kaohsiung_care_1780312365351.png";
+import wenshanCareImg from "./assets/images/wenshan_care_1780312383372.png";
+import hivHalfwayHouseImg from "./assets/images/hiv_halfway_house_1780312854233.png";
+import strandedForeignersImg from "./assets/images/stranded_foreigners_1780312871610.png";
+import foundingVisionImg from "./assets/images/founding_vision_image_1780313384174.png";
 import { 
   SPONSORS, 
   TEAM_MEMBERS, 
@@ -64,98 +72,98 @@ const getPageHeaderInfo = (page: ActivePage): { img: string; tag: string; title:
   switch (page) {
     case "about":
       return {
-        img: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1593113630400-ea4288922497?q=80&w=1600",
         tag: "ABOUT THE FOUNDATION",
         title: "About Prince Fazza Charity Foundation",
         sub: "A Global Covenant of Direct Relief: Operating Across 25 Nations with 100% Direct-to-Field Resource Flow."
       };
     case "founder-chronicle":
       return {
-        img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1600",
+        img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1600",
         tag: "THE FOUNDER'S CHRONICLE",
         title: "Founder's Chronicle",
         sub: "Legacy of Systemic Grace: A Personal endowing pledge from His Highness Prince Fazza Al-Sayyid."
       };
     case "board-directors":
       return {
-        img: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600",
         tag: "STEWARDSHIP TEAM",
-        title: "Board of Directors Office",
+        title: "Board of Directors",
         sub: "Sovereign Trustees & Ethical Stewards: Defining Strict Protocols Under Zero Administrative Leakage Metrics."
       };
     case "org-structure":
       return {
         img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600",
         tag: "WORKFLOW TOPOLOGY",
-        title: "Organizational Structure & Internal Flow",
+        title: "Organizational Structure",
         sub: "Synergistic System Flow: Engineering swift field interventions with high double-entry ledger audits."
       };
     case "hiv-support":
       return {
-        img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
         tag: "CLINICAL HIV OUTREACH",
-        title: "HIV Critical Support Systems",
+        title: "HIV Support",
         sub: "Access free clinical diagnostics, absolute double-blind privacy coordinates, certified immunotherapy, and personalized nutrition support."
       };
     case "halfway-house":
       return {
-        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        img: hivHalfwayHouseImg,
         tag: "COMMUNITY INTEGRATION MODULE",
-        title: "Fazza Safehouse & Transition Residences",
+        title: "Halfway House",
         sub: "Safe temporary housing, structured career placement courses, and legal assistance for individuals transition back into the workforce."
       };
     case "vulnerable-foreigners":
       return {
-        img: "https://images.unsplash.com/photo-1511632765486-a96cb75a8986?q=80&w=1600",
+        img: strandedForeignersImg,
         tag: "GLOBAL IMMIGRANT DEFENSE COVENANT",
-        title: "Vulnerable Foreign Citizens Support",
+        title: "Vulnerable Foreigners Aid",
         sub: "Emergency food, placement protocols, linguistic translations, and consular guidance for vulnerable non-native residents."
       };
     case "seminar-request":
       return {
-        img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?w=800&q=80",
         tag: "ONCOLOGICAL LECTURES & WORKSHOPS",
-        title: "Request an Educational Seminar",
+        title: "Seminar Request Booking",
         sub: "Book professional workshops on preventative oncology, cancer survivor therapy, and psychological tools for local communities."
       };
     case "health-ambassadors":
       return {
-        img: "https://images.unsplash.com/photo-1576091158221-1241f92e22fc?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
         tag: "VERIFIED REGIONAL MEDICAL NETWORK",
-        title: "Fazza Certified Health Ambassadors Database",
+        title: "Health Ambassador Database",
         sub: "Direct secure access to our network of registered pediatricians, mobile emergency clinics, and oncology specialists."
       };
     case "children-home":
       return {
-        img: "https://images.unsplash.com/photo-1489659639091-8b687bc4386e?w=800&q=80",
+        img: taipeiCareImg,
         tag: "YOUTH REUNIFICATION PROTOCOL",
-        title: "Children Came Home Initiative",
+        title: "Children Came Home",
         sub: "Identifying displaced youth, coordinating legal protection guardians, and restoring young souls back with original families."
       };
     case "shelter-placement":
       return {
-        img: "https://images.unsplash.com/photo-1469571486040-af250c558d63?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=800&q=80",
         tag: "EMERGENCY PLACEMENT INFRASTRUCTURE",
-        title: "Emergency Shelter & Housing Placement",
+        title: "Shelter and Placement",
         sub: "Deploying high-quality shelter networks equipped with continuous power, running clean water, and on-site psychological medics."
       };
     case "medical-care":
       return {
         img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
         tag: "ONCOLOGY SURGERY ENDOWMENTS",
-        title: "Hospital Subsidies & Surgical Care Operations",
+        title: "Hospitals and Medical Care",
         sub: "Full coverage for diagnostic oncology, emergency surgical operations, and complex clinical treatments for vulnerable families."
       };
     case "mother-child":
       return {
-        img: "https://images.unsplash.com/photo-1531983412531-1f49a365f698?q=80&w=1600",
+        img: wenshanCareImg,
         tag: "MATERNITY CLINICAL WINGS",
-        title: "Mother & Baby Protection Havens",
+        title: "Mother and Child Shelter",
         sub: "Specialized maternal medical monitoring, safe postpartum housing, and dispatch stations for vital infant formula."
       };
     case "visit-care":
       return {
-        img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1600",
+        img: kaohsiungCareImg,
         tag: "VISIT & CARE PROGRAM",
         title: "On-Site Visit & Continuous Care Program",
         sub: "Join local teams visiting remote clinical quarters, assisting mobile medic caravans, and delivering care packages to beneficiaries."
@@ -186,7 +194,7 @@ const getPageHeaderInfo = (page: ActivePage): { img: string; tag: string; title:
       };
     case "donate":
       return {
-        img: "https://images.unsplash.com/photo-1532938911079-1b06ac7ce2ec?q=80&w=1600",
+        img: childrenPlayingImg,
         tag: "DONATION PORTAL",
         title: "Sovereign Contribution Portal",
         sub: "Support direct humanitarian action under certified tax-exempt 501(c)(3) guidelines."
@@ -272,22 +280,42 @@ const getPageHeaderInfo = (page: ActivePage): { img: string; tag: string; title:
   }
 };
 
+function toTitleCase(str: string) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      if (txt.length <= 2 && txt.toLowerCase() !== 'of') {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+
 const PageHeader: React.FC<{ page: ActivePage; lang: string }> = ({ page, lang }) => {
   const info = getPageHeaderInfo(page);
   return (
-    <div className="w-full font-sans">
-      {/* Cinematic premium hero image/banner ONLY */}
-      <div className="relative w-full h-[280px] md:h-[400px] overflow-hidden bg-slate-950">
+    <div className="w-full font-sans bg-slate-50">
+      {/* Cinematic premium hero image/banner with Title */}
+      <div className="relative w-full h-[300px] md:h-[450px] overflow-hidden bg-zinc-900 group">
         <img 
           src={info.img} 
           alt={info.title} 
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover opacity-65 hover:scale-[1.02] transition-transform duration-[10000ms] ease-out select-none"
+          className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[10000ms] group-hover:scale-105 ease-out select-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
+        {/* Soft dark overlay only for readability */}
+        <div className="absolute inset-0 bg-black/20" />
+        
+        {/* Title placed elegantly on the hero image */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+          <h1 className="text-white text-2xl md:text-3xl font-light tracking-wide font-sans drop-shadow-sm">
+            {toTitleCase(info.title)}
+          </h1>
+        </div>
       </div>
 
-      {/* BELOW THE HERO IMAGE: Page title, subtitle, introduction text */}
+      {/* BELOW THE HERO IMAGE: Page subtitle, introduction text */}
       <div className="bg-slate-50 border-b border-zinc-100 py-10 px-6">
         <div className="max-w-4xl mx-auto space-y-4">
           <div className="flex items-center space-x-2">
@@ -296,10 +324,7 @@ const PageHeader: React.FC<{ page: ActivePage; lang: string }> = ({ page, lang }
               // {info.tag}
             </span>
           </div>
-          <h1 className="text-2xl md:text-5xl font-black text-[#111111] uppercase tracking-tight font-sans leading-none">
-            {info.title}
-          </h1>
-          <p className="text-[#333333] text-xs md:text-sm font-semibold leading-relaxed font-sans max-w-3xl">
+          <p className="text-[#333333] text-sm md:text-base font-normal leading-relaxed font-sans max-w-3xl">
             {info.sub}
           </p>
         </div>
@@ -426,47 +451,41 @@ export default function App() {
   const [healthSearchQuery, setHealthSearchQuery] = useState<string>("");
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  // Hero carousel (5 premium slides)
+  // Hero carousel (3 premium slides)
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isHeroHovered, setIsHeroHovered] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const heroSlides = [
     {
-      img: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format,compress&q=90&w=2000",
-      tag: "EMPOWERING FUTURE FUTURES",
-      title: "Educating and Sponsoring Children Worldwide",
-      sub: "Constructing modern learn spaces and equipping remote communities with high-tech science materials."
+      img: "https://i.imgur.com/FMlPyKP.jpg",
+      title: "Premium Humanitarian Action"
     },
     {
-      img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format,compress&q=90&w=2000",
-      tag: "HUNGER SHIELD GLOBAL",
-      title: "Sustaining Life and Local Rural Agriculture",
-      sub: "Reaching deep famine territories with tailored vital nutrients and dry rations."
+      img: "https://i.imgur.com/ikwFPYq.jpg",
+      title: "Global Relief Efforts"
     },
     {
-      img: "https://images.unsplash.com/photo-1494883759339-0b042055a4ee?auto=format,compress&q=90&w=2000",
-      tag: "MOBILE HEALTH CARAVANS",
-      title: "State-of-the-Art Free Ophthalmic Surgery Clinics",
-      sub: "Restoring vision to over 90,000 citizens directly in rural mountain communities."
-    },
-    {
-      img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format,compress&q=90&w=2000",
-      tag: "RAPID RECOVERY CRISIS CORE",
-      title: "Immediate Humanitarian Emergency Triage",
-      sub: "Establishing water purifying centers and high-capacity shelters inside 24 hours of crises."
-    },
-    {
-      img: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format,compress&q=90&w=2000",
-      tag: "COVENANT WOMEN MICRO-FUND",
-      title: "Microcapital Grants & Leadership Workshops",
-      sub: "Sponsoring local women cooperatives to manage independent textile enterprises."
+      img: "https://i.imgur.com/rxmkSgC.jpg",
+      title: "Empowering Rural Communities"
     }
   ];
 
   useEffect(() => {
+    if (isHeroHovered && window.innerWidth >= 1024) return;
+    
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 7000);
+      setIsTransitioning(true);
+      setCurrentSlide((prev) => prev + 1);
+    }, 3000); 
     return () => clearInterval(timer);
-  }, []);
+  }, [isHeroHovered]);
+
+  const handleTransitionEnd = () => {
+    if (currentSlide >= heroSlides.length) {
+      setIsTransitioning(false);
+      setCurrentSlide(0);
+    }
+  };
 
   // Sticky Back to top or donate CTAs
   const [scrolledHeight, setScrolledHeight] = useState(0);
@@ -692,25 +711,40 @@ Thank you.`;
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const isDonationFocusMode = activePage === "donate" && donationStep === 2 && !paymentSuccess;
+
   return (
-    <div className="min-h-screen font-sans bg-white text-[#111111]">
+    <div className={`min-h-screen font-sans text-[#111111] ${isDonationFocusMode ? 'bg-slate-50' : 'bg-white'}`}>
       
+      {/* Universal back button for Focus Mode */}
+      {isDonationFocusMode && (
+        <button 
+          onClick={() => setDonationStep(1)} 
+          className="fixed top-6 left-6 z-[999] w-10 h-10 rounded-full bg-white/40 hover:bg-white border border-slate-200/50 hover:border-slate-300 shadow-sm flex items-center justify-center opacity-40 hover:opacity-100 transition-all duration-300 cursor-pointer backdrop-blur-md"
+          title="Return to previous page"
+        >
+          <svg className="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+      )}
+
       {/* Dynamic Header / Navbar component */}
-      <Navbar 
-        activePage={activePage} 
-        setActivePage={handlePageChange} 
-        darkMode={false} 
-        setDarkMode={() => {}}
-        lang={lang} 
-        setLang={setLang}
-        openDonateModal={() => { handlePageChange("donate"); setDonationStep(1); }}
-        highContrast={false}
-        setHighContrast={() => {}}
-      />
+      {!isDonationFocusMode && (
+        <Navbar 
+          activePage={activePage} 
+          setActivePage={handlePageChange} 
+          darkMode={false} 
+          setDarkMode={() => {}}
+          lang={lang} 
+          setLang={setLang}
+          openDonateModal={() => { handlePageChange("donate"); setDonationStep(1); }}
+          highContrast={false}
+          setHighContrast={() => {}}
+        />
+      )}
 
       {/* FLOATING PREMIUM DONATE NOW BUTTON */}
       <AnimatePresence>
-        {activePage !== "donate" && (
+        {activePage !== "donate" && !isDonationFocusMode && (
           <motion.div 
             className="fixed bottom-6 right-6 z-50 flex items-center"
             initial={{ opacity: 0, scale: 0.85, y: 50 }}
@@ -768,32 +802,42 @@ Thank you.`;
           {/* 1. HOMEPAGE VIEW ARCHITECTURE */}
           {activePage === "home" && (
         <div>
-          {/* IMMERSIVE 5-SLIDE CAROUSEL HERO SECTION - COMPLETELY CLEAN & MINIMAL */}
-          <div className="relative h-[60vh] md:h-[700px] bg-slate-950 overflow-hidden w-full">
-            {/* Soft dark elegant overlay */}
-            <div className="absolute inset-0 bg-black/40 z-10" />
+          {/* IMMERSIVE 3-SLIDE CAROUSEL HERO SECTION - PURE PUSH SLIDE */}
+          <div 
+            className="relative h-[60vh] md:h-[700px] bg-slate-950 overflow-hidden w-full"
+            onMouseEnter={() => setIsHeroHovered(true)}
+            onMouseLeave={() => setIsHeroHovered(false)}
+          >
+            {/* Soft dark elegant overlay (if needed, but user said no black transition. We can leave a subtle overlay so dots are visible, or omit it. The user said: "No black overlays during transition". It might mean the fade effect. A constant overlay is fine for text, but there is no text here! So I will omit the overlay entirely so images are pure!) */}
             
-            {/* Slide Background Visual - Seamless Cinematic Crossfade */}
-            <AnimatePresence mode="popLayout">
-              <motion.img
-                key={currentSlide}
-                src={heroSlides[currentSlide].img}
-                alt={heroSlides[currentSlide].title}
-                initial={{ opacity: 0, scale: 1.03 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-                className="absolute inset-0 w-full h-full object-cover object-center select-none pointer-events-none"
-              />
-            </AnimatePresence>
+            {/* Slide Background Visual - Seamless Push Slide */}
+            <div 
+              className={`flex w-full h-full ${isTransitioning ? 'transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]' : ''}`}
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {[...heroSlides, heroSlides[0]].map((slide, i) => (
+                <div key={i} className="min-w-full h-full relative">
+                  <img
+                    src={slide.img}
+                    alt={slide.title}
+                    className="absolute inset-0 w-full h-full object-cover object-center select-none pointer-events-none"
+                  />
+                </div>
+              ))}
+            </div>
 
             {/* Subtle Carousel Dots indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
               {heroSlides.map((_, i) => (
                 <button 
                   key={i} 
-                  onClick={() => setCurrentSlide(i)} 
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentSlide === i ? "bg-[#F4511E] w-6" : "bg-white/40"}`}
+                  onClick={() => {
+                    setIsTransitioning(true);
+                    setCurrentSlide(i);
+                  }} 
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentSlide % heroSlides.length === i ? "bg-[#F4511E] w-6" : "bg-white/40 shadow-sm"}`}
+                  aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
             </div>
@@ -808,7 +852,7 @@ Thank you.`;
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               <div className="relative">
-                <img src="https://images.unsplash.com/photo-1470506028280-a011fb34b6f7?q=80&w=800" alt="Children playing" className="w-full h-auto object-cover rounded-sm shadow-md" />
+                <img src={happyChildrenPlaying} alt="Children playing outdoors" className="w-full h-auto object-cover rounded-sm shadow-md" />
               </div>
               
               <div className="space-y-6">
@@ -842,22 +886,25 @@ Thank you.`;
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mb-8">
                 {[
                   {
-                    img: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?w=500",
+                    img: taipeiCareImg,
                     title: "Taipei Care for Children Home",
+                    page: "children-home" as ActivePage,
                     desc: "I. Origin of the Organization: Taiwan's society and economic structure are rapidly changing. Children and adolescents are..."
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1473649085228-583485e6e4d7?w=500",
+                    img: kaohsiungCareImg,
                     title: "Kaohsiung Care Home",
+                    page: "visit-care" as ActivePage,
                     desc: "I. Origin of the Institution: Taiwan's society and economic structure are rapidly changing. children and adolescents are..."
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1469571486040-af250c558d63?w=500",
+                    img: wenshanCareImg,
                     title: "Wenshan Maternal and Child Health Service Center",
+                    page: "mother-child" as ActivePage,
                     desc: "Xiao Niu (pseudonym), a premature baby born to a foreign national, suffered from congenital respiratory malformation and..."
                   }
                 ].map((s, i) => (
-                  <div key={i} className="bg-white rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-[#EAEAEA] flex flex-col group cursor-pointer" onClick={() => handlePageChange("programs")}>
+                  <div key={i} className="bg-white rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-[#EAEAEA] flex flex-col group cursor-pointer" onClick={() => handlePageChange(s.page)}>
                     <div className="h-[220px] overflow-hidden">
                       <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                     </div>
@@ -877,17 +924,19 @@ Thank you.`;
               <div className="flex flex-col lg:flex-row justify-center gap-8">
                  {[
                   {
-                    img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500",
+                    img: hivHalfwayHouseImg,
                     title: "HIV/AIDS Halfway House",
+                    page: "halfway-house" as ActivePage,
                     desc: "Dafang (pseudonym) contracted HIV, resulting in limb paralysis and an inability to care for himself. By chance, he was referre..."
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=500",
+                    img: strandedForeignersImg,
                     title: "Assistance to stranded foreign nationals",
+                    page: "vulnerable-foreigners" as ActivePage,
                     desc: "Frank, an American veteran born in 1925, personally participated in World War II and the Korean War, sustaining severe spinal..."
                   }
                 ].map((s, i) => (
-                  <div key={i} className="lg:w-[calc(33.333%-1.33rem)] bg-white rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-[#EAEAEA] flex flex-col group cursor-pointer" onClick={() => handlePageChange("programs")}>
+                  <div key={i} className="lg:w-[calc(33.333%-1.33rem)] bg-white rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-[#EAEAEA] flex flex-col group cursor-pointer" onClick={() => handlePageChange(s.page)}>
                     <div className="h-[220px] overflow-hidden">
                       <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                     </div>
@@ -1164,7 +1213,7 @@ Thank you.`;
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <img src="https://images.unsplash.com/photo-1487802194600-4b8c6ea3c48a?q=80&w=700" alt="Sustaining life together" className="rounded-3xl shadow-2xl h-[450px] w-full object-cover border border-[#EAEAEA]" />
+            <img src={foundingVisionImg} alt="Sustaining life together" className="rounded-3xl shadow-2xl h-[450px] w-full object-cover border border-[#EAEAEA]" />
             
             <div className="space-y-6">
               <h2 className="text-2xl font-extrabold text-[#111111] font-sans">Our Founding Vision</h2>
@@ -2778,24 +2827,26 @@ Thank you.`;
       )}
            {/* 4. DONATE COMPREHENSIVE VIEW GATEWAY */}
       {activePage === "donate" && (
-        <div className="bg-white min-h-screen">
+        <div className={isDonationFocusMode ? "bg-slate-50/50 backdrop-blur-sm min-h-screen flex items-center justify-center p-4" : "bg-white min-h-screen"}>
           {/* Page Header with hero image and details below */}
-          <PageHeader page="donate" lang={lang} />
+          {!isDonationFocusMode && <PageHeader page="donate" lang={lang} />}
 
-          <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className={isDonationFocusMode ? "w-full max-w-2xl animate-fade-in" : "max-w-7xl mx-auto px-4 py-16"}>
           {/* Main Container Card — GLASSMORPHISM & LUXE FINISH */}
-          <div className="w-full bg-white rounded-[32px] overflow-hidden border border-[#EAEAEA] shadow-[0_24px_80px_rgba(0,0,0,0.06)] backdrop-blur-md relative font-sans">
+          <div className={`w-full bg-white rounded-[32px] overflow-hidden border border-[#EAEAEA] shadow-[0_24px_80px_rgba(0,0,0,0.06)] backdrop-blur-md relative font-sans ${isDonationFocusMode ? 'shadow-2xl' : ''}`}>
             
             {/* Header branding ribbon */}
-            <div className="bg-[#111111] px-8 py-3.5 flex flex-col sm:flex-row justify-between items-center border-b border-[#EAEAEA] text-xs">
-              <div className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
-                <span className="text-slate-400 font-mono tracking-widest uppercase font-extrabold text-[10px]">SECURE DONATION ALLOCATION</span>
+            {!isDonationFocusMode && (
+              <div className="bg-[#111111] px-8 py-3.5 flex flex-col sm:flex-row justify-between items-center border-b border-[#EAEAEA] text-xs">
+                <div className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+                  <span className="text-slate-400 font-mono tracking-widest uppercase font-extrabold text-[10px]">SECURE DONATION ALLOCATION</span>
+                </div>
+                <div className="text-slate-400 font-mono tracking-widest uppercase font-extrabold text-[10px] sm:mt-0 mt-1">
+                  PRINCE FAZZA CHARITY FOUNDATION
+                </div>
               </div>
-              <div className="text-slate-400 font-mono tracking-widest uppercase font-extrabold text-[10px] sm:mt-0 mt-1">
-                PRINCE FAZZA CHARITY FOUNDATION
-              </div>
-            </div>
+            )}
 
             {paymentSuccess ? (
               /* DYNAMIC ULTRA PREMIUM SUCCESS SCREEN */
@@ -3125,67 +3176,69 @@ Thank you.`;
               /* ========================================================
                   STEP 2 — PAYMENT DETAILS & ADRESS INSTRUCTIONS
                   ======================================================== */
-              <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[600px] animate-fade-in">
+              <div className={`grid grid-cols-1 ${isDonationFocusMode ? '' : 'lg:grid-cols-12'} min-h-[600px] animate-fade-in`}>
                 
                 {/* LEFT COLUMN: DONATION SUMMARY & VERBIAGE */}
-                <div className="lg:col-span-4 bg-[#111111] text-white p-10 lg:p-12 flex flex-col justify-between border-r border-slate-800">
-                  <div className="space-y-8">
-                    <span className="text-[#F4511E] font-mono text-xs uppercase tracking-widest font-black">// TRANSACTION COMPREHENSIVE</span>
-                    
-                    <div className="space-y-4">
-                      <h3 className="font-sans font-black text-2xl tracking-tight text-white">Your Pledge Shield</h3>
-                      <p className="text-xs text-slate-400 font-medium leading-relaxed">
-                        You are about to initiate or pledge support to change vulnerable lives. Your transaction is audited annually under EY guidelines.
-                      </p>
-                    </div>
-
-                    {/* Selected Summary Card */}
-                    <div className="bg-white/5 border border-white/10 p-5 rounded-2xl space-y-4">
-                      <span className="block text-[9px] font-mono tracking-widest uppercase text-[#F4511E] font-bold">Selected allocation parameters</span>
+                {!isDonationFocusMode && (
+                  <div className="lg:col-span-4 bg-[#111111] text-white p-10 lg:p-12 flex flex-col justify-between border-r border-slate-800">
+                    <div className="space-y-8">
+                      <span className="text-[#F4511E] font-mono text-xs uppercase tracking-widest font-black">// TRANSACTION COMPREHENSIVE</span>
                       
-                      <div className="space-y-2 text-xs">
-                        <div className="flex justify-between border-b border-white/5 pb-2">
-                          <span className="text-slate-400 font-medium">Agreement Scope:</span>
-                          <span className="font-extrabold text-white capitalize">{donationCategory} Portfolio</span>
+                      <div className="space-y-4">
+                        <h3 className="font-sans font-black text-2xl tracking-tight text-white">Your Pledge Shield</h3>
+                        <p className="text-xs text-slate-400 font-medium leading-relaxed">
+                          You are about to initiate or pledge support to change vulnerable lives. Your transaction is audited annually under EY guidelines.
+                        </p>
+                      </div>
+
+                      {/* Selected Summary Card */}
+                      <div className="bg-white/5 border border-white/10 p-5 rounded-2xl space-y-4">
+                        <span className="block text-[9px] font-mono tracking-widest uppercase text-[#F4511E] font-bold">Selected allocation parameters</span>
+                        
+                        <div className="space-y-2 text-xs">
+                          <div className="flex justify-between border-b border-white/5 pb-2">
+                            <span className="text-slate-400 font-medium">Agreement Scope:</span>
+                            <span className="font-extrabold text-white capitalize">{donationCategory} Portfolio</span>
+                          </div>
+                          <div className="flex justify-between border-b border-white/5 pb-2">
+                            <span className="text-slate-400 font-medium">Initiative Target:</span>
+                            <span className="font-extrabold text-white max-w-[150px] text-right truncate">
+                              {PROGRAMS.find(p => p.id === selectedCampaignId)?.title || "General Operations"}
+                            </span>
+                          </div>
+                          <div className="flex justify-between pt-1">
+                            <span className="text-slate-400 font-medium">Pledge Volume:</span>
+                            <span className="font-black text-rose-500 text-sm font-mono">${Number(donateAmount).toLocaleString()} USD</span>
+                          </div>
                         </div>
-                        <div className="flex justify-between border-b border-white/5 pb-2">
-                          <span className="text-slate-400 font-medium">Initiative Target:</span>
-                          <span className="font-extrabold text-white max-w-[150px] text-right truncate">
-                            {PROGRAMS.find(p => p.id === selectedCampaignId)?.title || "General Operations"}
-                          </span>
+                      </div>
+
+                      <div className="space-y-3">
+                        <div className="flex items-center space-x-3 text-xs text-slate-300">
+                          <Shield className="w-5 h-5 text-emerald-500" />
+                          <span>Sovereign-grade Encryption Secure</span>
                         </div>
-                        <div className="flex justify-between pt-1">
-                          <span className="text-slate-400 font-medium">Pledge Volume:</span>
-                          <span className="font-black text-rose-500 text-sm font-mono">${Number(donateAmount).toLocaleString()} USD</span>
+                        <div className="flex items-center space-x-3 text-xs text-slate-300">
+                          <Lock className="w-5 h-5 text-rose-500" />
+                          <span>Anti-Fraud Compliance Clear</span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3 text-xs text-slate-300">
-                        <Shield className="w-5 h-5 text-emerald-500" />
-                        <span>Sovereign-grade Encryption Secure</span>
-                      </div>
-                      <div className="flex items-center space-x-3 text-xs text-slate-300">
-                        <Lock className="w-5 h-5 text-rose-500" />
-                        <span>Anti-Fraud Compliance Clear</span>
-                      </div>
+                    <div className="pt-8 text-[11px] text-slate-400">
+                      <button 
+                        type="button" 
+                        onClick={() => setDonationStep(1)} 
+                        className="text-[#F4511E] hover:underline font-bold cursor-pointer"
+                      >
+                        ← Return to Step 1 & Modify Volume
+                      </button>
                     </div>
                   </div>
-
-                  <div className="pt-8 text-[11px] text-slate-400">
-                    <button 
-                      type="button" 
-                      onClick={() => setDonationStep(1)} 
-                      className="text-[#F4511E] hover:underline font-bold cursor-pointer"
-                    >
-                      ← Return to Step 1 & Modify Volume
-                    </button>
-                  </div>
-                </div>
+                )}
 
                 {/* RIGHT COLUMN: DONOR DETAILS FORM & PAYMENT METHOD SPECIFICATION */}
-                <div className="lg:col-span-8 p-10 lg:p-14 bg-white">
+                <div className={`${isDonationFocusMode ? 'p-8 lg:p-12' : 'lg:col-span-8 p-10 lg:p-14'} bg-white`}>
                   <form onSubmit={handleDonateSubmit} className="space-y-8">
                     
                     {/* Step info */}
@@ -3991,7 +4044,7 @@ Thank you.`;
           )}
 
           {/* DEFAULT INNER PAGES GENERATOR FOR THE REMAINING 35 PAGES */}
-          {activePage !== "faq" && (
+          {activePage !== "faq" && !isDonationFocusMode && (
             <div className="bg-[#FAFAFA] border border-[#EAEAEA] p-6 rounded-3xl text-xs space-y-2 text-slate-500 font-sans">
               <p className="font-extrabold text-[#111111] uppercase font-sans tracking-wider text-[10px]">Fazza Compliance Statement</p>
               <p className="font-medium leading-relaxed">
@@ -4021,8 +4074,9 @@ Thank you.`;
       {/* ========================================================
           GLOBAL TRUSTED FOOTER
           ======================================================== */}
-      <footer className="bg-slate-950 text-white/50 py-12 px-6 border-t border-white/5 text-xs font-sans">
-        <div className="max-w-7xl mx-auto mb-10 pb-10 border-b border-white/5 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      {!isDonationFocusMode && (
+        <footer className="bg-slate-950 text-white/50 py-12 px-6 border-t border-white/5 text-xs font-sans">
+          <div className="max-w-7xl mx-auto mb-10 pb-10 border-b border-white/5 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           <div>
             <span className="text-[#F4511E] font-mono text-[9px] uppercase tracking-widest font-black block mb-1">Direct Liaison Desk</span>
             <h3 className="text-lg font-sans font-black text-white uppercase tracking-tight">Direct Connection Channels</h3>
@@ -4141,6 +4195,7 @@ Thank you.`;
           </div>
         </div>
       </footer>
+      )}
 
       {/* PREMIUM IMAGE PREVIEW / LIGHTBOX SYSTEM */}
       <AnimatePresence>

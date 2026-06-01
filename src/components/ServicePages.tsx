@@ -7,6 +7,22 @@ import {
   ChevronDown, ChevronRight
 } from "lucide-react";
 
+import legalSupportPanelImg from "../assets/images/legal_support_panel_1780313070257.png";
+import emergencyFoodRationsImg from "../assets/images/emergency_food_rations_1780313086807.png";
+import childrenSchoolPacksImg from "../assets/images/children_school_packs_1780313126433.png";
+
+import childEnteringSchoolImg from "../assets/images/child_entering_school_1780313772317.png";
+import protectiveGuardianshipImg from "../assets/images/protective_guardianship_1780313825998.png";
+import nutrientDispatchImg from "../assets/images/nutrient_dispatch_1780313802216.png";
+
+import schoolProgramsCommunicationImg from "../assets/images/school_programs_communication_1780314061954.png";
+import volunteersPackingWarehouseImg from "../assets/images/volunteers_packing_warehouse_1780314082074.png";
+import educationalLectureGroupImg from "../assets/images/educational_lecture_group_1780314098458.png";
+
+import safeCribMaternityImg from "../assets/images/safe_crib_maternity_1780314250020.png";
+import pediatricTestingImg from "../assets/images/pediatric_testing_1780314267929.png";
+import babyFormulaDispatchImg from "../assets/images/baby_formula_dispatch_1780314289916.png";
+
 interface ServicePagesProps {
   activePage: ActivePage;
   lang: string;
@@ -137,9 +153,9 @@ export const ServicePages: React.FC<ServicePagesProps> = ({ activePage, lang, op
       { img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600", desc: "Transition coordinator lecturing on interview skills." }
     ],
     "vulnerable-foreigners": [
-      { img: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=600", desc: "Multi-lingual legal support panel at consular services." },
-      { img: "https://images.unsplash.com/photo-1500305614571-ea5e6d628d01?w=800&q=80", desc: "Emergency food rations dispatch in urban shelter hubs." },
-      { img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600", desc: "Children of relocated foreign citizens receiving school packs." }
+      { img: legalSupportPanelImg, desc: "Multi-lingual legal support panel at consular services." },
+      { img: emergencyFoodRationsImg, desc: "Emergency food rations dispatch in urban shelter hubs." },
+      { img: childrenSchoolPacksImg, desc: "Children of relocated foreign citizens receiving school packs." }
     ],
     "seminar-request": [
       { img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600", desc: "Interactive medical workshop at an accredited college." },
@@ -152,9 +168,9 @@ export const ServicePages: React.FC<ServicePagesProps> = ({ activePage, lang, op
       { img: "https://images.unsplash.com/photo-1579684389783-bdf560104271?q=80&w=600", desc: "Consulting panel reviewing active regional diagnostic maps." }
     ],
     "children-home": [
-      { img: "https://images.unsplash.com/photo-1487802194600-4b8c6ea3c48a?w=800&q=80", desc: "Reunited child entering safe educational module." },
-      { img: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=600", desc: "Caseworkers executing protective guardianship checks." },
-      { img: "https://images.unsplash.com/photo-1585858902193-27ab97c11f7c?w=800&q=80", desc: "Nutrient dispatch specifically formatted for displaced youth." }
+      { img: childEnteringSchoolImg, desc: "Reunited child entering safe educational module." },
+      { img: protectiveGuardianshipImg, desc: "Caseworkers executing protective guardianship checks." },
+      { img: nutrientDispatchImg, desc: "Nutrient dispatch specifically formatted for displaced youth." }
     ],
     "shelter-placement": [
       { img: "https://images.unsplash.com/photo-1469571486040-af250c558d63?q=80&w=600", desc: "Completed shelter units with full climate protection." },
@@ -167,14 +183,14 @@ export const ServicePages: React.FC<ServicePagesProps> = ({ activePage, lang, op
       { img: "https://images.unsplash.com/photo-1538108156887-54de9eec20be?q=80&w=600", desc: "Hospital recovery wing accommodating regional patients." }
     ],
     "mother-child": [
-      { img: "https://images.unsplash.com/photo-1531983412531-1f49a365f698?q=80&w=600", desc: "Safe crib sanctuary inside postpartum wing." },
-      { img: "https://images.unsplash.com/photo-1544127993-37dbfe43562a?q=80&w=600", desc: "Pediatric testing and nutritional allocations." },
-      { img: "https://images.unsplash.com/photo-1519689680058-324335c77eb2?q=80&w=600", desc: "Mated infant formula and baby nutrients dispatch lockers." }
+      { img: safeCribMaternityImg, desc: "Safe crib sanctuary inside postpartum wing." },
+      { img: pediatricTestingImg, desc: "Pediatric testing and nutritional allocations." },
+      { img: babyFormulaDispatchImg, desc: "Mated infant formula and baby nutrients dispatch lockers." }
     ],
     "visit-care": [
-      { img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=600", desc: "Registered visitors communicating with school programs." },
-      { img: "https://images.unsplash.com/photo-1508848130740-413155d0f622?w=800&q=80", desc: "Volunteers packing care systems in local warehouses." },
-      { img: "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?w=800&q=80", desc: "On-site group providing interactive educational lectures." }
+      { img: schoolProgramsCommunicationImg, desc: "Registered visitors communicating with school programs." },
+      { img: volunteersPackingWarehouseImg, desc: "Volunteers packing care systems in local warehouses." },
+      { img: educationalLectureGroupImg, desc: "On-site group providing interactive educational lectures." }
     ],
     "careers": [
       { img: "https://images.unsplash.com/photo-1610015694295-cd6a32d16eb5?w=800&q=80", desc: "Staff training inside our central logistics conference wing." },
